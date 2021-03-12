@@ -26,7 +26,9 @@ SECRET_KEY = '(+^nf8_me8dp54b25ksd^ncg7zsq#od!s)%0&h9&iur+d@g-3_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 print(DEBUG)
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'morning-journey-00915.herokuapp.com',
+]
 
 
 # Application definition
