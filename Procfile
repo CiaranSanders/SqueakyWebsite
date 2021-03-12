@@ -1,0 +1,1 @@
+web: gunicorn SqueakyWebsite.wsgi --log-file -
