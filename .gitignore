@@ -1,3 +1,5 @@
 .idea/
 *.sqlite*
 __pycache__/
+debug.sh
+
