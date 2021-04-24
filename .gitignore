@@ -2,4 +2,4 @@
 *.sqlite*
 __pycache__/
 debug.sh
-
+*.swp
