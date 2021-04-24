@@ -33,6 +33,7 @@ if DEBUG:
 else:
     ALLOWED_HOSTS = [
         'let-squeaky-out.herokuapp.com',
+        'let-squeaky-out.herokuapp',
     ]
 
 
