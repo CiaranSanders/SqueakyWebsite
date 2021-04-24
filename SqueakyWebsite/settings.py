@@ -11,8 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-import os.path
-import os.getenv
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,9 +25,15 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG')
 
-ALLOWED_HOSTS = [
-    'let-squeaky-out.herokuapp.com',
-]
+if DEBUG:
+    ALLOWED_HOSTS = [
+            '127.0.0.1',
+            'localhost',
+    ]
+else:
+    ALLOWED_HOSTS = [
+        'let-squeaky-out.herokuapp.com',
+    ]
 
 
 # Application definition
